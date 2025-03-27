@@ -36,7 +36,7 @@ export default function App() {
                 if (index === clickedIndex) {
                     return {
                         disabled: true,
-                        colorIndex: currentColorIndex
+                        colorIndex:  clickedIndex != 8  ?  clickedIndex + 1 : 0
                     };
                 }
                 return state;
